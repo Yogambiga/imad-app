@@ -4,6 +4,20 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+var content={
+    title:'Article-One',
+    heading:'Articleone',
+    date:'aug 10 2017',
+    content:`<p>
+                        This is my first webapp file. Very excited.This is my first webapp file. Very excited.This is my first webapp file. Very excited.This is my first webapp file. Very excited.This is my first webapp file. Very excited.This is my first webapp file. Very excited.This is my first webapp file. Very excited.This is my first webapp file. Very excited.This is my first webapp file. Very excited.
+                    </p>
+                     <p>
+                        This is my first webapp file. Very excited.This is my first webapp file. Very excited.This is my first webapp file. Very excited.This is my first webapp file. Very excited.This is my first webapp file. Very excited.This is my first webapp file. Very excited.This is my first webapp file. Very excited.This is my first webapp file. Very excited.This is my first webapp file. Very excited.
+                    </p>
+                     <p>
+                        This is my first webapp file. Very excited.This is my first webapp file. Very excited.This is my first webapp file. Very excited.This is my first webapp file. Very excited.This is my first webapp file. Very excited.This is my first webapp file. Very excited.This is my first webapp file. Very excited.This is my first webapp file. Very excited.This is my first webapp file. Very excited.
+                    </p>`
+};
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
