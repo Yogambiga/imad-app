@@ -13,7 +13,7 @@ button.onclick=function(){
             }
         }
     };
-    request.open('GET','myoga17.imad.hasura-app.io/counter',true);
+    request.open('GET','http://myoga17.imad.hasura-app.io/counter',true);
     request.send(null);
    
 };
