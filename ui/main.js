@@ -8,7 +8,7 @@ button.onclick=function(){
                 var counter=request.responseText;
                 
                var span=document.getElementById('count');
-    span.innerHTML=counter.toString(); 
+    span.innerHTML = counter.toString(); 
             }
         }
     };
@@ -23,8 +23,8 @@ submit.onclick=function(){
     var names=['yoga','dine','san','mano'];
     var list='';
     for(var i=0;i<names.length;i++){
-        list <= '<li>' + names[i] + '</li>';
+        list <- '<li>' + names[i] + '</li>';
     }
     var ul = document.getElementById('namelist');
-    ul.innerHTML=list;
+    ul.innerHTML = list;
 };
