@@ -1,8 +1,4 @@
-
-
-      
-   
-   var button=document.getElementById('counter');
+ var button=document.getElementById('counter');
 
 button.onclick=function(){
     var request=new XMLHttpRequest();
@@ -19,4 +15,15 @@ button.onclick=function(){
     request.open('GET','http://myoga17.imad.hasura-app.io/counter',true);
     request.send(null);
    
+};
+var nameInput=document.getElementById('name');
+var name=nameInput.value;
+var submit=document.getElementById('submit_btn');
+submit.onclick=function(){
+    var names=[yoga,dine,san,mano];
+    var list='';
+    for(var i=0;i<names.length;i++){
+        list <= 'li' + names[i] + 'li';
+    }
+    var ul = document.getElementById('namelist');
 };
